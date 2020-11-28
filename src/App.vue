@@ -84,11 +84,18 @@
 
     <v-main>
       <v-container>
-        
+        <div class="d-flex justify-center">
+  <div class="col-md-8 col-sm-10">
          
         <Presentation />
-        
+        <br>
+        <v-divider></v-divider>
+        <br>
         <OpenStreetMap />
+        <br>
+        
+        <br>
+        <v-divider></v-divider>
         
         <DesignSprint v-intersect="{
             handler: onIntersect,
@@ -98,7 +105,8 @@
           }"/>
          
         <Zapier />
-        
+        </div>
+  </div>
 
       </v-container>
       

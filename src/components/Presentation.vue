@@ -1,25 +1,11 @@
 <template>
-  <v-parallax
-    height="900"
-    
-    src="https://picsum.photos/3000/3000"
-  >
-  <v-card
+ 
   
-  height="900"
-  class="col-lg-8 presentation">
-  
-  <!-- <div class="d-flex flex-center">
-      
-      <div class="col-lg-10 d-flex">
-          <v-responsive :aspect-ratio="9/14" max-width="250px">
-           <img src="https://picsum.photos/250/400" alt="">
-          </v-responsive>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quos corrupti ab voluptatem fuga tenetur rem dolore, quis, praesentium id sequi doloremque ipsa itaque a, nostrum ullam iusto iste! Culpa</p>
-      </div>
-  </div> -->
 
    <v-container fluid>
+     <v-img src="../../public/images/openstreetmap_ccampus.png">
+
+     </v-img>
       <v-row dense>
         <v-col class="d-flex flex-column justify-space-around align-center">
           <h1 class="align-end ">Conférence, outils et monde professionnel</h1>
@@ -34,6 +20,7 @@
           <v-card >
             <v-img
               :src="card.src"
+              
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               height="200px"
@@ -62,17 +49,18 @@
       </v-row>
     </v-container>
 
-  </v-card>
 
-  </v-parallax>
+ 
+
+  
 </template>
 <script>
   export default {
     data: () => ({
       cards: [
-        { title: 'OpenStreetMap', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 6 },
-        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+        { title: 'OpenStreetMap', src: '@/assets/images/openstreetmap_campus.png', flex: 6 },
+        { title: 'DesignSprint', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
+        { title: 'Zapier', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
       ],
     }),
   }
