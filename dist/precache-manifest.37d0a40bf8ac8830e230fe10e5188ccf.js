@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chrome/chrome-installprocess-128-128.png"
   },
   {
-    "revision": "4b30ccfbb1bf57a901d7",
-    "url": "/css/chunk-vendors.2d4f646c.css"
+    "revision": "30a02fec8108bca8de67",
+    "url": "/css/chunk-vendors.c07cced2.css"
   },
   {
     "revision": "14dbd08f354daac12686f3903d2a2009",
@@ -76,24 +76,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/firefox/firefox-marketplace-512-512.png"
   },
   {
+    "revision": "5f7b36298e6096f06bd12d2a6bf60eb1",
+    "url": "/images/field_papers.png"
+  },
+  {
     "revision": "99b1c8f1444cb5a7b389271fcdb78e54",
     "url": "/images/openstreetmap_ccampus.png"
   },
   {
-    "revision": "99b1c8f1444cb5a7b389271fcdb78e54",
-    "url": "/img/openstreetmap_ccampus.99b1c8f1.png"
-  },
-  {
-    "revision": "9a319221f44f8452610da78c9558718a",
+    "revision": "7d2c85ce5896698186ae5459dc30dd70",
     "url": "/index.html"
   },
   {
-    "revision": "0e6b8f627cecf926cc66",
-    "url": "/js/app.843ef1ea.js"
+    "revision": "274bcfca6e823afbc262",
+    "url": "/js/app.438ab763.js"
   },
   {
-    "revision": "4b30ccfbb1bf57a901d7",
-    "url": "/js/chunk-vendors.3fe57d5e.js"
+    "revision": "30a02fec8108bca8de67",
+    "url": "/js/chunk-vendors.793d5dae.js"
   },
   {
     "revision": "9c51e85c12b6b2fdfb08012aee2f1e31",

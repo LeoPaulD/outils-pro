@@ -89,21 +89,27 @@
          
         <Presentation />
         <br>
+        <br>
         <v-divider></v-divider>
+        <br>
         <br>
         <OpenStreetMap />
         <br>
-        
         <br>
         <v-divider></v-divider>
-        
+        <br>
+        <br>
         <DesignSprint v-intersect="{
             handler: onIntersect,
             options: {
               threshold: [0, 0.5, 1.0]
             }
           }"/>
-         
+         <br>
+         <br>
+         <v-divier></v-divier>
+         <br>
+         <br>
         <Zapier />
         </div>
   </div>
@@ -149,7 +155,9 @@
 
 <script>
 import Zapier from './components/Zapier';
+
 import OpenStreetMap from './components/OpenStreetMap.vue';
+
 import DesignSprint from './components/DesignSprint.vue';
 import Presentation from './components/Presentation.vue';
 

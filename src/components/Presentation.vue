@@ -3,9 +3,7 @@
   
 
    <v-container fluid>
-     <v-img src="../../public/images/openstreetmap_ccampus.png">
-
-     </v-img>
+    
       <v-row dense>
         <v-col class="d-flex flex-column justify-space-around align-center">
           <h1 class="align-end ">Conférence, outils et monde professionnel</h1>
@@ -58,9 +56,9 @@
   export default {
     data: () => ({
       cards: [
-        { title: 'OpenStreetMap', src: '@/assets/images/openstreetmap_campus.png', flex: 6 },
-        { title: 'DesignSprint', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-        { title: 'Zapier', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+        { title: 'OpenStreetMap', src: 'images/map.jpg', flex: 6 },
+        { title: 'DesignSprint', src: 'images/design.jpg', flex: 6 },
+        { title: 'Zapier', src: 'images/zapier.jpg', flex: 6 },
       ],
     }),
   }
