@@ -7,7 +7,7 @@
     </v-container>
     <div class="d-flex justify-center">
        
-    <v-carousel class="col-10">
+    <v-carousel class="col-sm-10">
         <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
