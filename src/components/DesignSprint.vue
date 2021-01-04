@@ -2,7 +2,7 @@
 
 
   
-  <v-stepper v-intersect="onIntersect" v-model="e1">
+  <v-stepper v-intersect="onIntersect" v-model="e1" id="DesignSprint">
     <v-stepper-header>
       <v-stepper-step
         :complete="e1 > 1"

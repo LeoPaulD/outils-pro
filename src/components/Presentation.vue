@@ -2,7 +2,7 @@
  
   
 
-   <v-container fluid>
+   <v-container fluid fill-height id="presentation" >
     
       <v-row dense>
         <v-col class="d-flex flex-column justify-space-around align-center">
@@ -15,34 +15,29 @@
           class="col-md-6 col-lg-6"
           
         >
-          <v-card >
+        <v-hover
+        v-slot="{ hover }"
+        close-delay="200"
+      >
+
+       
+          <v-card  :elevation="hover ? 16 : 2"
+          :class="{ 'on-hover': hover }" :href="card.link">
             <v-img
               :src="card.src"
               
+              
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="200px"
+              height="350px"
               
             >
               <v-card-title v-text="card.title"></v-card-title>
             </v-img>
 
-            <v-card-actions>
-              <v-spacer></v-spacer>
-
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
-            </v-card-actions>
+            
           </v-card>
+           </v-hover>
         </v-col>
       </v-row>
     </v-container>
@@ -56,9 +51,9 @@
   export default {
     data: () => ({
       cards: [
-        { title: 'OpenStreetMap', src: 'images/map.jpg', flex: 6 },
-        { title: 'DesignSprint', src: 'images/design.jpg', flex: 6 },
-        { title: 'Zapier', src: 'images/zapier.jpg', flex: 6 },
+        { title: 'OpenStreetMap', src: 'images/map.jpg', link: '#OpenStreetMap',flex: 6 },
+        { title: 'DesignSprint', src: 'images/design.jpg', link: '#DesignSprint', flex: 6 },
+        { title: 'Zapier', src: 'images/zapier.jpg', link: '#Zapier', flex: 6 },
       ],
     }),
   }

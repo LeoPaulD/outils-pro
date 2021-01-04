@@ -6,6 +6,10 @@ import './registerServiceWorker'
 import { LMap, LTileLayer, LControl,LMarker,LTooltip,LFeatureGroup, LPopup, LControlLayers, LControlZoom, LIcon, LWMSTileLayer} from "vue2-leaflet";
 import 'leaflet/dist/leaflet.css';
 
+import VueScrollProgress from 'vue-scroll-progress'
+
+Vue.use(VueScrollProgress)
+
 
 Vue.component('l-map', LMap);
 Vue.component('l-icon', LIcon);

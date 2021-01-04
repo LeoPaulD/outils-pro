@@ -85,11 +85,14 @@
     </v-navigation-drawer> -->
 
     <v-main>
+      <VueScrollProgress></VueScrollProgress>
+      
       <v-container>
+        <Presentation />
         <div class="d-flex justify-center">
   <div class="col-md-8 col-sm-10">
          
-        <Presentation />
+        
         <br>
         <br>
         <v-divider></v-divider>
@@ -101,12 +104,7 @@
         <v-divider></v-divider>
         <br>
         <br>
-        <DesignSprint v-intersect="{
-            handler: onIntersect,
-            options: {
-              threshold: [0, 0.5, 1.0]
-            }
-          }"/>
+        <DesignSprint />
          <br>
          <br>
          <v-divier></v-divier>
@@ -126,25 +124,25 @@
     shift
     fixed
   >
-    <v-btn>
+    <v-btn href="#presentation">
       <span>Présentation</span>
 
       <v-icon>mdi-presentation</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn href="#OpenStreetMap">
       <span>OpenStreetMap</span>
 
       <v-icon>mdi-map</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn href="#DesignSprint"> 
       <span>DesignSprint</span>
 
       <v-icon>mdi-brush</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn href="#Zapier">
       <span>Zapier</span>
 
       <v-icon>mdi-clipboard-list-outline</v-icon>

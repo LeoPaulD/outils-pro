@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.37d0a40bf8ac8830e230fe10e5188ccf.js"
+  "/precache-manifest.7256b105c8af29a1912591b4f31147bc.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "outils-pro"});
