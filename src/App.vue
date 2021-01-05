@@ -118,7 +118,7 @@
       </v-container>
       
     </v-main>
-    <scrollactive v-on:itemchanged="onItemChanged" :offset="250">
+    <scrollactive v-on:itemchanged="onItemChanged" :offset="50">
     <v-bottom-navigation
     v-model="value"
     :background-color="color"
