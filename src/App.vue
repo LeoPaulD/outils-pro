@@ -100,21 +100,17 @@
         <br>
         <br>
         <v-divider></v-divider>
-        <br>
-        <br>
+        
         <OpenStreetMap />
         <br>
         <br>
         <v-divider></v-divider>
-        <br>
-        <br>
         <DesignSprint  />
         
          <br>
          <br>
          <v-divier></v-divier>
-         <br>
-         <br>
+         
         <Zapier />
         </div>
   </div>
@@ -122,7 +118,7 @@
       </v-container>
       
     </v-main>
-    <scrollactive v-on:itemchanged="onItemChanged" :offset="200">
+    <scrollactive v-on:itemchanged="onItemChanged" :offset="250">
     <v-bottom-navigation
     v-model="value"
     :background-color="color"
@@ -225,25 +221,20 @@ window.addEventListener("appinstalled", () => {
   methods: {
     onItemChanged(event, currentItem, lastActiveItem) {
       
-      this.currentItem = currentItem.hash.substring(1);
-      
-      
-      
-
-     
-    if (this.currentItem == 'DesignSprint') {
-      this.value = 2;
-    }
-    if (this.currentItem == 'presentation') {
+      currentItem = currentItem.hash.substring(1);
+   
+    if (currentItem == 'presentation') {
       this.value = 0;
     }
-    if (this.currentItem == 'Zapier') {
-      this.value = 3;
-    }
-    if (this.currentItem == 'OpenStreetMap') {
+    if (currentItem == 'OpenStreetMap') {
       this.value = 1;
     }
-      
+     if (currentItem == 'DesignSprint') {
+      this.value = 2;
+    }
+    if (currentItem == 'Zapier') {
+      this.value = 3;
+    }
     
   },
   

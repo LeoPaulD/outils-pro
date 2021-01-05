@@ -1,7 +1,8 @@
 <template>
 
    <v-container id="OpenStreetMap" >
-
+     <br>
+     <br>
     <h1 class="text-center">Premiers pas avec OpenStreeMap</h1>
     <v-container>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda blanditiis cupiditate officia magnam vel! Non ut aliquid dolores quae distinctio praesentium cupiditate est vel minima eum impedit, et beatae.</p>

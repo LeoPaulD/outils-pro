@@ -1,6 +1,7 @@
 <template>
 <div id="Zapier">
-
+  <br>
+  <br>
   <h1 class="text-center">Automatiser facilement des taches avec Zapier.</h1>
   <br>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum maxime, molestiae, ex fugit error corporis consectetur minus reiciendis illo eaque autem non aliquam exercitationem nihil? Enim, cum reiciendis! Cupiditate.
