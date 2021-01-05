@@ -1,7 +1,13 @@
 <template>
 
 
-  
+  <div>
+
+  <h1 class="text-center">Innover en utilisan la méthode de Design Sprint.</h1>
+  <br>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita quaerat saepe magnam pariatur nemo eum nostrum ad! Facere mollitia, veniam soluta autem reprehenderit beatae? Laudantium et autem perferendis incidunt!
+  </p>
+  <br>
   <v-stepper v-intersect="onIntersect" v-model="e1" id="DesignSprint">
     <v-stepper-header>
       <v-stepper-step
@@ -154,7 +160,7 @@
   </v-stepper>
   
   
-  
+  </div>
  
 </template>
 <script>

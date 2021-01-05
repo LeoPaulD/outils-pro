@@ -15,6 +15,7 @@
           <v-btn text @click="install">Installer</v-btn>
         </template>
       </v-banner>
+      
     <!-- <v-app-bar
       color="primary"
       dense
@@ -85,8 +86,11 @@
     </v-navigation-drawer> -->
 
     <v-main>
+     
+      
       <VueScrollProgress></VueScrollProgress>
       
+     
       <v-container>
         <Presentation />
         <div class="d-flex justify-center">
@@ -104,7 +108,8 @@
         <v-divider></v-divider>
         <br>
         <br>
-        <DesignSprint />
+        <DesignSprint  />
+        
          <br>
          <br>
          <v-divier></v-divier>
@@ -117,6 +122,7 @@
       </v-container>
       
     </v-main>
+    <scrollactive v-on:itemchanged="onItemChanged" :offset="200">
     <v-bottom-navigation
     v-model="value"
     :background-color="color"
@@ -124,30 +130,35 @@
     shift
     fixed
   >
-    <v-btn href="#presentation">
-      <span>Présentation</span>
+  
+  
+
+    <v-btn href="#presentation" class="scrollactive-item">
+      <span>Présentation </span>
 
       <v-icon>mdi-presentation</v-icon>
     </v-btn>
 
-    <v-btn href="#OpenStreetMap">
-      <span>OpenStreetMap</span>
+    <v-btn href="#OpenStreetMap" class="scrollactive-item">
+      <span>OpenStreetMap </span>
 
       <v-icon>mdi-map</v-icon>
     </v-btn>
 
-    <v-btn href="#DesignSprint"> 
+    <v-btn href="#DesignSprint" class="scrollactive-item"> 
       <span>DesignSprint</span>
 
       <v-icon>mdi-brush</v-icon>
     </v-btn>
 
-    <v-btn href="#Zapier">
+    <v-btn href="#Zapier" class="scrollactive-item">
       <span>Zapier</span>
 
       <v-icon>mdi-clipboard-list-outline</v-icon>
     </v-btn>
+    
   </v-bottom-navigation>
+  </scrollactive>
     
   
   </v-app>
@@ -179,6 +190,9 @@ export default {
       isPresentation: false,
       value: 0,
       deferredPrompt: null,
+      route: 'test',
+      
+      
     };
   },
    computed: {
@@ -195,6 +209,7 @@ export default {
     },
   created() {
     
+    
     window.addEventListener("beforeinstallprompt", e => {
       e.preventDefault();
       // Stash the event so it can be triggered later.
@@ -208,6 +223,31 @@ window.addEventListener("appinstalled", () => {
     });
   },
   methods: {
+    onItemChanged(event, currentItem, lastActiveItem) {
+      
+      this.currentItem = currentItem.hash.substring(1);
+      
+      
+      
+
+     
+    if (this.currentItem == 'DesignSprint') {
+      this.value = 2;
+    }
+    if (this.currentItem == 'presentation') {
+      this.value = 0;
+    }
+    if (this.currentItem == 'Zapier') {
+      this.value = 3;
+    }
+    if (this.currentItem == 'OpenStreetMap') {
+      this.value = 1;
+    }
+      
+    
+  },
+  
+
     async dismiss() {
       Cookies.set("add-to-home-screen", null, { expires: 15 });
       this.deferredPrompt = null;
@@ -219,24 +259,28 @@ window.addEventListener("appinstalled", () => {
         this.isPresentation = entries[0].isPresentation >= 0.5
         var presentation = this.isPresentation
         if (presentation == true) {
-          this.value = 1
+          this.value = 2
         }
       },
     onIntersect (entries, observer) {
         this.isIntersecting = entries[0].isIntersecting >= 0.5
         var inter = this.isIntersecting
         if (inter == true) {
-          this.value = 2
+          this.value = 3
           
         }
         
         
         
       },
+      
+
+      
     
     
 
 
   }
+  
 };
 </script>

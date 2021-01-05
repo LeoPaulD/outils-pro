@@ -3,13 +3,19 @@
   
 
    <v-container fluid fill-height id="presentation" >
-    
+      
       <v-row dense>
-        <v-col class="d-flex flex-column justify-space-around align-center">
-          <h1 class="align-end ">Conférence, outils et monde professionnel</h1>
-          <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque magni accusamus sapiente molestiae porro doloribus assumenda, nam explicabo, hic deserunt dicta quisquam ratione, dolorem excepturi itaque asperiores quidem necessitatibus ipsa!</p>
+        <v-col class="d-flex flex-column justify-center align-center">
+          <h1 class=" ">Conférences, outils et applications</h1>
+          
+          <div class="d-flex justify-center col-lg-10">
+            <p class=" d-flex align-center" >
+           Au premier semestre des masters Humanités numériques de l’Université Bordeaux-Montaigne, des intervenants nous ont présenté et formé à différents outils et applications. Sur cette plateforme je vais vous présenter ces différents outils succinctement.  </p>
+          </div>
+          
         </v-col>
-        <v-col
+        
+        <scrollactive
           v-for="card in cards"
           :key="card.title"
           class="col-md-6 col-lg-6"
@@ -22,9 +28,10 @@
 
        
           <v-card  :elevation="hover ? 16 : 2"
-          :class="{ 'on-hover': hover }" :href="card.link">
+          :class="{ 'on-hover': hover }" :href="card.link" class="scrollactive-item">
             <v-img
               :src="card.src"
+              
               
               
               class="white--text align-end"
@@ -38,8 +45,10 @@
             
           </v-card>
            </v-hover>
-        </v-col>
+        </scrollactive>
+        
       </v-row>
+      
     </v-container>
 
 
