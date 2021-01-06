@@ -109,7 +109,7 @@
         
          <br>
          <br>
-         <v-divier></v-divier>
+         <v-divider></v-divider>
          
         <Zapier />
         </div>
@@ -118,7 +118,7 @@
       </v-container>
       
     </v-main>
-    <scrollactive v-on:itemchanged="onItemChanged" :offset="50">
+    <scrollactive v-on:itemchanged="onItemChanged" :offset="0">
     <v-bottom-navigation
     v-model="value"
     :background-color="color"
@@ -198,7 +198,7 @@ export default {
           case 0: return 'primary'
           case 1: return 'teal'
           case 2: return 'brown'
-          case 3: return 'red'
+          case 3: return 'red darken-4'
           default: return 'green lighten-1'
         }
       },

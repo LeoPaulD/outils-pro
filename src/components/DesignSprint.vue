@@ -4,10 +4,55 @@
   <div id="DesignSprint">
     <br>
     <br>
-  <h1 class="text-center">Innover en utilisant la méthode de Design Sprint.</h1>
+  <h1 class="text-center">Innover en utilisant le Design Sprint.</h1>
   <br>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita quaerat saepe magnam pariatur nemo eum nostrum ad! Facere mollitia, veniam soluta autem reprehenderit beatae? Laudantium et autem perferendis incidunt!
-  </p>
+  <v-container class="d-flex justify-space-around flex-wrap">
+        <p class="col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda blanditiis cupiditate officia magnam vel! Non ut aliquid dolores quae distinctio praesentium cupiditate est vel minima eum impedit, et beatae.</p>
+         <v-hover
+        v-slot="{ hover }"
+        close-delay="200"
+      >
+        <v-card :elevation="hover ? 16 : 2"
+          :class="{ 'on-hover': hover }" href="https://www.linkedin.com/in/camille-de-amorin-bonneau-750b1333/" target="_blank"
+    class="mx-auto col-lg-6"
+    color="brown"
+    dark
+    
+  >
+    <v-card-title>
+      <v-icon
+        large
+        left
+      >
+        mdi-linkedin
+      </v-icon>
+      <span class="title ">Linkedin</span>
+    </v-card-title>
+
+    <v-card-text class="headline font-weight-bold">
+      Camille DE AMORIN BONNEAU accompagne le développement des entreprises pour le développement des compétences marketing.
+    </v-card-text>
+
+    <v-card-actions>
+      <v-list-item class="grow">
+        <v-list-item-avatar color="grey darken-3">
+          <v-img
+            class="elevation-6"
+            alt=""
+            src="https://media-exp1.licdn.com/dms/image/C5603AQEd8YXncJX0eQ/profile-displayphoto-shrink_800_800/0/1516547071070?e=1615420800&v=beta&t=REBGE8Hr9zRVka5mHPchn4_Ab89Vd1QjlX3EvWWXSA4"
+          ></v-img>
+        </v-list-item-avatar>
+
+        <v-list-item-content>
+          <v-list-item-title>Camille <br> DE AMORIN BONNEAU</v-list-item-title>
+        </v-list-item-content>
+
+        
+      </v-list-item>
+    </v-card-actions>
+  </v-card>
+  </v-hover>
+    </v-container>
   <br>
   <v-stepper v-intersect="onIntersect" v-model="e1" >
     <v-stepper-header>
@@ -56,8 +101,8 @@
       <v-stepper-content step="1">
         <v-div class="d-flex justify-center flex-wrap">
 
-          <h1 class="col-10 text-center primary white--text rounded-xl" >Problématique : Jour 1</h1>
-          
+          <h2 class="col-12 text-center">Problématique : Jour 1</h2>
+          <br>
           <v-responsive :aspect-ratio="16/9" max-width="800px">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7zOBMxRYJ7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen > </iframe>
           </v-responsive>

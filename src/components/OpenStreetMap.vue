@@ -4,12 +4,57 @@
      <br>
      <br>
     <h1 class="text-center">Premiers pas avec OpenStreeMap</h1>
-    <v-container>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda blanditiis cupiditate officia magnam vel! Non ut aliquid dolores quae distinctio praesentium cupiditate est vel minima eum impedit, et beatae.</p>
-    </v-container>
-    <div class="d-flex justify-center">
+    <br>
+    <div class="d-flex justify-space-around flex-wrap">
+        <p class="col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda blanditiis cupiditate officia magnam vel! Non ut aliquid dolores quae distinctio praesentium cupiditate est vel minima eum impedit, et beatae.</p>
+         <v-hover
+        v-slot="{ hover }"
+        close-delay="200"
+      >
+        <v-card :elevation="hover ? 16 : 2"
+          :class="{ 'on-hover': hover }" href="https://www.linkedin.com/in/armelle-gilliard/" target="_blank"
+    class="mx-auto col-lg-6"
+    color="teal"
+    dark
+    
+  >
+    <v-card-title>
+      <v-icon
+        large
+        left
+      >
+        mdi-linkedin
+      </v-icon>
+      <span class="title ">Linkedin</span>
+    </v-card-title>
+
+    <v-card-text class="headline font-weight-bold">
+      Armelle Gilliard a plus de 20 ans d’expérience dans le domaine du numérique, est aujourd’hui experte en open data et maître d’œuvre en projets innovants.
+    </v-card-text>
+
+    <v-card-actions>
+      <v-list-item class="grow">
+        <v-list-item-avatar color="grey darken-3">
+          <v-img
+            class="elevation-6"
+            alt=""
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQE8YFwG_su2rQ/profile-displayphoto-shrink_800_800/0/1516297289002?e=1615420800&v=beta&t=pZd_td-ut7fRn26d3yEiX4-rAp0U92wnp_ml0ccRqYc"
+          ></v-img>
+        </v-list-item-avatar>
+
+        <v-list-item-content>
+          <v-list-item-title>Armelle Gilliard</v-list-item-title>
+        </v-list-item-content>
+
+        
+      </v-list-item>
+    </v-card-actions>
+  </v-card>
+  </v-hover>
+    </div>
+    <div class="d-flex justify-center ">
        
-    <v-carousel class="col-sm-10">
+    <v-carousel  class="mobilenone">
         <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
@@ -31,7 +76,7 @@
     </v-carousel>
     </div>
     <br>
-    <iframe width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/enrichir-open-street-map_530122?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+    <iframe class="mobilenone" width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/enrichir-open-street-map_530122?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
   </v-container>
 </template>
 <script>

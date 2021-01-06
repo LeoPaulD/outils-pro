@@ -8,5 +8,15 @@ h1 {
 }
 
 p {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
+li {
+    font-size: 1.3em;
+}
+
+
+@media (max-width: 600px) {
+    .mobilenone {
+      display: none;
+    }
+  }

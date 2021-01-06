@@ -4,8 +4,54 @@
   <br>
   <h1 class="text-center">Automatiser facilement des taches avec Zapier.</h1>
   <br>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum maxime, molestiae, ex fugit error corporis consectetur minus reiciendis illo eaque autem non aliquam exercitationem nihil? Enim, cum reiciendis! Cupiditate.
-  </p>
+  <v-container class="d-flex justify-space-around flex-wrap">
+        <p class="col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda blanditiis cupiditate officia magnam vel! Non ut aliquid dolores quae distinctio praesentium cupiditate est vel minima eum impedit, et beatae.</p>
+         <v-hover
+        v-slot="{ hover }"
+        close-delay="200"
+      >
+        <v-card :elevation="hover ? 16 : 2"
+          :class="{ 'on-hover': hover }" href="https://www.linkedin.com/in/armelle-gilliard/" target="_blank"
+    class="mx-auto col-lg-6"
+    color="red darken-4"
+    dark
+    
+  >
+    <v-card-title>
+      <v-icon
+        large
+        left
+      >
+        mdi-linkedin
+      </v-icon>
+      <span class="title ">Linkedin</span>
+    </v-card-title>
+
+    <v-card-text class="headline font-weight-bold">
+      Bertrand Bussac est président de la formation Wagon à Bordeaux et est vice président de FrenchTech Bordeaux.
+    </v-card-text>
+
+    <v-card-actions>
+      <v-list-item class="grow">
+        <v-list-item-avatar color="grey darken-3">
+          <v-img
+            class="elevation-6"
+            alt=""
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQFYzWNPtvefYg/profile-displayphoto-shrink_800_800/0/1533216447237?e=1615420800&v=beta&t=Aurc8vc5s20uq4zlQ8vearA7YUhxJlmEAaxZMEPN10Q"
+          ></v-img>
+        </v-list-item-avatar>
+
+        <v-list-item-content>
+          <v-list-item-title>Bertrand Bussac</v-list-item-title>
+        </v-list-item-content>
+
+        
+      </v-list-item>
+    </v-card-actions>
+  </v-card>
+  </v-hover>
+    </v-container>
+  
   <br>
   <v-timeline
     align-top
