@@ -2,7 +2,7 @@
  
   
 
-   <v-container fluid fill-height id="presentation" >
+   <v-container fluid fill-height  >
       
       <v-row dense>
         <v-col class="d-flex flex-column justify-center align-center">
@@ -34,9 +34,9 @@
               
               
               
-              class="white--text align-end"
+              class="white--text align-end menu-presentation"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="350px"
+              
               
             >
               <v-card-title v-text="card.title"></v-card-title>

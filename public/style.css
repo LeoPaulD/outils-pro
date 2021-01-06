@@ -1,10 +1,11 @@
 h1 {
     font-family: 'Xanh Mono', monospace;
 }
-.presentation {
-     background-color: rgba(255, 255, 255, 0.6) !important;
-     
-    
+
+
+h2 {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 45px;
 }
 
 p {
@@ -13,10 +14,38 @@ p {
 li {
     font-size: 1.3em;
 }
+.story {
+    max-width: 350px;
+}
+.menu-presentation {
+    height: 350px;
+}
 
+
+  
+  
+  
+  
+  
+  @keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg);
+    }
+  }
+  
 
 @media (max-width: 600px) {
     .mobilenone {
       display: none;
+
+    }
+    .menu-presentation{
+        height: 100px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .story {
+        max-width: 350px;
     }
   }

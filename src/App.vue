@@ -16,74 +16,179 @@
         </template>
       </v-banner>
       
-    <!-- <v-app-bar
-      color="primary"
-      dense
-      dark
+
+     <v-app-bar class="d-flex justify-center align-center" style="height: 70px;" id="presentation">
+        <v-dialog
+      v-model="dialog"
+      fullscreen
+      hide-overlay
+      transition="dialog-bottom-transition"
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Monde professionel, DNHD</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      
-
-      <v-menu
-        left
-        bottom
-      >
+      <template v-slot:activator="{ on, attrs }">
         
-
-        <v-list>
-          <v-list-item
-            v-for="n in 5"
-            :key="n"
-            @click="() => {}"
+        <div style="border: 2px dashed #66BB6A; padding: 2.5px; border-radius: 50%;" class="ma-1"  :elevation="hover ? 16 : 2"
           >
-            <v-list-item-title>Option {{ n }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-    </v-app-bar>
-    
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
-    >
-      <v-list-item>
-        <v-list-item-avatar>
-          <v-img src="http://leo-paul.fr/images/pp.png"></v-img>
-        </v-list-item-avatar>
-        
-        <v-list-item-content>
-          <v-list-item-title> Léo-Paul DUBOURG</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
+         <v-avatar
+        color="teal"
+        size="53"
+        v-bind="attrs"
+          v-on="on"
+       
 
-      <v-divider></v-divider>
-
-      <v-list dense>
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
+      >OSM</v-avatar>
+      
+       </div>
+      </template>
+      <v-card>
+        <v-toolbar
+          dark
+          color="teal"
         >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
+          <v-btn
+            icon
+            dark
+            @click="dialog = false"
+          >
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+          <v-toolbar-title>OpenStreetMap</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-toolbar-items>
+            
+          </v-toolbar-items>
+        </v-toolbar>
+        <div class="d-flex justify-center ">
 
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> -->
+        
+        <v-responsive :aspect-ratio="16/9"  style="max-width: 350px" >
+        <v-img
+        src="images/map-story.jpg"
+        
+        alt="test"
+        class="grey lighten-2"
+      ></v-img>
+      </v-responsive>
+          </div>
+      </v-card>
+    </v-dialog>
+    <v-dialog
+      v-model="dialog2"
+      fullscreen
+      hide-overlay
+      transition="dialog-bottom-transition"
+    >
+      <template v-slot:activator="{ on, attrs }">
+        
+        <div style="border: 2px dashed #66BB6A; padding: 2.5px; border-radius: 50%;" class="ma-1"  :elevation="hover ? 16 : 2"
+          >
+         <v-avatar
+        color="brown"
+        size="53"
+        v-bind="attrs"
+          v-on="on"
+       
+
+      >DS</v-avatar>
+      
+       </div>
+      </template>
+      <v-card>
+        <v-toolbar
+          dark
+          color="brown"
+        >
+          <v-btn
+            icon
+            dark
+            @click="dialog2 = false"
+          >
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+          <v-toolbar-title>Design Sprint</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-toolbar-items>
+            
+          </v-toolbar-items>
+        </v-toolbar>
+        <div class="d-flex justify-center ">
+
+        
+        <v-responsive :aspect-ratio="16/9"  style="max-width: 350px" >
+        <v-img
+        src="images/design-story.jpg"
+        
+        alt="test"
+        class="grey lighten-2"
+      ></v-img>
+      </v-responsive>
+          </div>
+      </v-card>
+    </v-dialog>
+    <v-dialog
+      v-model="dialog3"
+      fullscreen
+      hide-overlay
+      transition="dialog-bottom-transition"
+    >
+      <template v-slot:activator="{ on, attrs }">
+        
+        <div style="border: 2px dashed #66BB6A; padding: 2.5px; border-radius: 50%;" class="ma-1"  :elevation="hover ? 16 : 2"
+          >
+         <v-avatar
+        color="red darken-4"
+        size="53"
+        v-bind="attrs"
+          v-on="on"
+       
+
+      >Zapier</v-avatar>
+      
+       </div>
+      </template>
+      <v-card>
+        <v-toolbar
+          dark
+          color="red darken-4"
+        >
+          <v-btn
+            icon
+            dark
+            @click="dialog3 = false"
+          >
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+          <v-toolbar-title>Zapier</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-toolbar-items>
+            
+          </v-toolbar-items>
+        </v-toolbar>
+        <div class="d-flex justify-center ">
+
+        
+        <v-responsive :aspect-ratio="16/9"  style="max-width: 350px" >
+        <v-img
+        src="images/Zapier_story.jpg"
+        
+        alt="test"
+        class="grey lighten-2"
+      ></v-img>
+      </v-responsive>
+          </div>
+      </v-card>
+    </v-dialog>
+       
+        
+      
+       
+       
+   
+
+     </v-app-bar>
+
+     
+      
+   
 
     <v-main>
      
@@ -186,7 +291,11 @@ export default {
       isPresentation: false,
       value: 0,
       deferredPrompt: null,
-      route: 'test',
+      
+      dialog: false,
+      dialog2: false,
+      dialog3: false,
+      
       
       
     };

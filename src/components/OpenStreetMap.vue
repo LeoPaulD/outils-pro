@@ -6,11 +6,12 @@
     <h1 class="text-center">Premiers pas avec OpenStreeMap</h1>
     <br>
     <div class="d-flex justify-space-around flex-wrap">
-        <p class="col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda blanditiis cupiditate officia magnam vel! Non ut aliquid dolores quae distinctio praesentium cupiditate est vel minima eum impedit, et beatae.</p>
+        <p class="col-lg-6">Le mardi 6 octobre, Armelle Gillard nous a formé à l'outil OpenStreetMap et surtout elle nous a appris les bonnes pratiques pour devenir contributeur à cette banque de données ouverte. On a appris à délimiter une zone à cartographier, à analyser sur le terrain et pour finir à enrichir OpenStreetMap de nos observations.</p>
          <v-hover
         v-slot="{ hover }"
         close-delay="200"
       >
+    
         <v-card :elevation="hover ? 16 : 2"
           :class="{ 'on-hover': hover }" href="https://www.linkedin.com/in/armelle-gilliard/" target="_blank"
     class="mx-auto col-lg-6"
@@ -51,7 +52,11 @@
     </v-card-actions>
   </v-card>
   </v-hover>
+  <div class="col-12"></div>
+        <h2 class="col-lg-6 text-left">Qu'est que l'outil collaboratif OpenStreetMap&nbsp;?</h2>
+        <p class="col-lg-6">OpenStreetMap (OSM) est un projet de cartographie qui a pour but de constituer une base de données géographiques libre du monde en utilisant le système GPS et d'autres données libres. Par l'utilisation de moyens informatiques basés sur Internet qui permettent l'intervention et la collaboration de tout utilisateur volontaire, OpenStreetMap relève de la géomatique 2.0 et est aussi une contribution à ce qui est appelé la néogéographie, dont les outils composent le GeoWeb</p>
     </div>
+    <br>
     <div class="d-flex justify-center ">
        
     <v-carousel  class="mobilenone">

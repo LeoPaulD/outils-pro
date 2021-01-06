@@ -7,7 +7,7 @@
   <h1 class="text-center">Innover en utilisant le Design Sprint.</h1>
   <br>
   <v-container class="d-flex justify-space-around flex-wrap">
-        <p class="col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda blanditiis cupiditate officia magnam vel! Non ut aliquid dolores quae distinctio praesentium cupiditate est vel minima eum impedit, et beatae.</p>
+        <p class="col-lg-6">Le mercredi 14 octobre, Camille DE AMORIN BONNEAU nous a appris les grands principes de la méthode de création Design Sprint sous forme d'ateliers pratiques. Nous avons réalisé les 5 étapes du Design Sprint en version accéléré car nous avons realisé en une journée au lieu de 5 jours.</p>
          <v-hover
         v-slot="{ hover }"
         close-delay="200"
@@ -52,6 +52,9 @@
     </v-card-actions>
   </v-card>
   </v-hover>
+  <div class="col-12"></div>
+        <h2 class="col-lg-6 text-left">Qu'est que ce processus de création appelé Design Sprint&nbsp;?</h2>
+        <p class="col-lg-6">Le Design Sprint est un processus de création conçue pour les start-ups et les grandes entreprises. L’idée novatrice du Design Sprint est d’imposer une contrainte temporelle, 5 jours. Il permet d'obtenir un premier prototype d’un produit et les retours d’expérience des utilisateurs. Pour y parvenir, cette méthode mélange différentes techniques d’idéation, de stratégie business, et de conception centrée sur l’utilisateur.</p>
     </v-container>
   <br>
   <v-stepper v-intersect="onIntersect" v-model="e1" >
@@ -98,10 +101,10 @@
     </v-stepper-header>
 
     <v-stepper-items>
-      <v-stepper-content step="1">
+      <v-stepper-content step="1" style="height: 500px; overflow:scroll">
         <v-div class="d-flex justify-center flex-wrap">
 
-          <h2 class="col-12 text-center">Problématique : Jour 1</h2>
+          <h3 class="col-12 text-center">Problématique : Jour 1</h3>
           <br>
           <v-responsive :aspect-ratio="16/9" max-width="800px">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7zOBMxRYJ7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen > </iframe>
@@ -120,6 +123,7 @@
         <v-btn
           color="primary"
           @click="e1 = 2"
+          
         >
           Continue
         </v-btn>
@@ -128,8 +132,8 @@
         
       </v-stepper-content>
 
-      <v-stepper-content step="2">
-        <div class="d-flex justify-center">
+      <v-stepper-content step="2" style="height: 550px; overflow:scroll">
+        <div class="d-flex justify-center" >
           <v-responsive :aspect-ratio="16/9" max-width="800px">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_ITJ5lAXQhg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen > </iframe>
           </v-responsive>
@@ -148,7 +152,7 @@
         
       </v-stepper-content>
 
-      <v-stepper-content step="3">
+      <v-stepper-content step="3" style="height: 550px; overflow:scroll">
         <div class="d-flex justify-center">
           <v-responsive :aspect-ratio="16/9" max-width="800px">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7BKBFOOKbNo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen > </iframe>
@@ -165,7 +169,7 @@
 
         
       </v-stepper-content>
-      <v-stepper-content step="4">
+      <v-stepper-content step="4" style="height: 550px; overflow:scroll">
         <div class="d-flex justify-center">
           <v-responsive :aspect-ratio="16/9" max-width="800px">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IGcwFV76t7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen > </iframe>
@@ -182,7 +186,7 @@
 
         
       </v-stepper-content>
-      <v-stepper-content step="5">
+      <v-stepper-content step="5" style="height: 550px; overflow:scroll">
         <div class="d-flex justify-center">
           
           <v-responsive :aspect-ratio="16/9" max-width="800px">

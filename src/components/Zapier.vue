@@ -5,7 +5,7 @@
   <h1 class="text-center">Automatiser facilement des taches avec Zapier.</h1>
   <br>
   <v-container class="d-flex justify-space-around flex-wrap">
-        <p class="col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda blanditiis cupiditate officia magnam vel! Non ut aliquid dolores quae distinctio praesentium cupiditate est vel minima eum impedit, et beatae.</p>
+        <p class="col-lg-6">Le lundi 2 novembre, Bertrand Bussac nous a informé sur les termes liés au developpement web. Puis il nous a formé sur l'outil Zapier pour automatiser très facilement des taches. Il nous a montré comment lier 2 applications afin d'automatiser des taches redondandes dans notre quotidien professionel. </p>
          <v-hover
         v-slot="{ hover }"
         close-delay="200"
@@ -50,6 +50,9 @@
     </v-card-actions>
   </v-card>
   </v-hover>
+  <div class="col-12"></div>
+        <h2 class="col-lg-6 text-left">Qu'est que cette outil d'automatisation appelé Zapier&nbsp;?</h2>
+        <p class="col-lg-6">Zapier est un service web qui vous permet d’automatiser des actions en connectant les différentes applications que vous utilisez au quotidien. Il existe plus de 1500 applications que vous pouvez utiliser avec Zapier. Parmi les plus courantes se retrouvent : Facebook, Twitter, Gmail, WordPress, Google Drive, Trello, Google Agenda, Linkedin, Slack et bien d’autres encore</p>
     </v-container>
   
   <br>
