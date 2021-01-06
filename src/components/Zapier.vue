@@ -11,7 +11,7 @@
         close-delay="200"
       >
         <v-card :elevation="hover ? 16 : 2"
-          :class="{ 'on-hover': hover }" href="https://www.linkedin.com/in/armelle-gilliard/" target="_blank"
+          :class="{ 'on-hover': hover }" href="https://www.linkedin.com/in/bertrand-bussac-4185034a/" target="_blank"
     class="mx-auto col-lg-6"
     color="red darken-4"
     dark
