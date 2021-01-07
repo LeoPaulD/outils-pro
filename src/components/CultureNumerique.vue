@@ -51,7 +51,7 @@
   </v-card>
   </v-hover>
   <div class="col-12"></div>
-        <h3 class="col-lg-6 text-left" style="color: #6A1B9A">Qu'est que cette outil d'automatisation appelé Zapier&nbsp;?</h3>
+        <h3 class="col-lg-6 text-left" style="color: #6A1B9A">L'évolution d'internet</h3>
         <p class="col-lg-6">Zapier est un service web qui vous permet d’automatiser des actions en connectant les différentes applications que vous utilisez au quotidien. Il existe plus de 1500 applications que vous pouvez utiliser avec Zapier. Parmi les plus courantes se retrouvent : Facebook, Twitter, Gmail, WordPress, Google Drive, Trello, Google Agenda, Linkedin, Slack et bien d’autres encore</p>
     </v-container>
   

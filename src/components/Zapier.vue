@@ -52,7 +52,7 @@
   </v-hover>
   <div class="col-12"></div>
   
-        <h3 class="col-lg-6 "  style="color: #B71C1C">Qu'est que cette outil d'automatisation appelé Zapier&nbsp;?</h3>
+        <h3 class="col-lg-6 "  style="color: #B71C1C">Qu'est que cet outil d'automatisation appelé Zapier&nbsp;?</h3>
         <p class="col-lg-6">Zapier est un service web qui vous permet d’automatiser des actions en connectant les différentes applications que vous utilisez au quotidien. Il existe plus de 1500 applications que vous pouvez utiliser avec Zapier. Parmi les plus courantes se retrouvent : Facebook, Twitter, Gmail, WordPress, Google Drive, Trello, Google Agenda, Linkedin, Slack et bien d’autres encore</p>
         <div class="col-12"></div>
         <p class="col-lg-6 " >Pendant cette formation, Bertrand Bussac nous a exposé la problèmatique qu'il rencontré dans son école le Wagon lors des inscriptions et a répondu a cette problématique par l'exemple en nous formant à Zapier. Sa problématique était comment gérer facilement les demandes d'inscriptions à son école. Pour répondre à cette problématique, il a créé un formulaire sur la plateforme TypeForme, pour que les étudiants puissent s'inscrire. Une fois que l'étudiant a rempli le formulaire, une fiche est créé sur le Trello de Bertrand Bussac. Si les documents demandés sont complet après verification, Bertrand Bussac place la fiche dans la colonne complet et ça déclanche l'envoi d'un mail à l'étudiant pour le notifier que son dossier est complet. Mais si le dossier est incomplet, l'étudiant est notifié que son dossier n'est pas complet. </p>
