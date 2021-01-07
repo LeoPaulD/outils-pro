@@ -1,51 +1,99 @@
 h1 {
-    font-family: 'Xanh Mono', monospace;
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
 }
 
 
 h2 {
-    font-family: 'Xanh Mono', monospace;
-    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+
 }
+
 li {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
 }
+
 .story {
-    max-width: 350px;
+    max-width: 450px;
 }
+
 .menu-presentation {
     height: 350px;
 }
 
 
-  
-  
-  
-  
-  
-  @keyframes spin { 
-    100% { 
-      transform: rotateZ(360deg);
+
+
+
+
+
+
+@keyframes spin {
+    100% {
+        transform: rotateZ(360deg);
     }
-  }
-  
+}
+
 
 @media (max-width: 600px) {
+    
+
     .mobilenone {
-      display: none;
+        display: none;
 
     }
-    .menu-presentation{
+
+    .menu-presentation {
         height: 100px;
     }
+
     h2 {
         font-size: 30px;
     }
+
     .story {
         max-width: 350px;
     }
-  }
+
+    .large {
+        display: none;
+    }
+
+    .medium {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+    
+
+    .large {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .mobile {
+        display: none;
+    }
+
+    .medium {
+        display: none;
+    }
+}

@@ -3,7 +3,7 @@
    <v-container id="OpenStreetMap" >
      <br>
      <br>
-    <h1 class="text-center">Premiers pas avec OpenStreeMap</h1>
+    <h1 class="text-center teal--text" >Premiers pas avec OpenStreetMap.</h1>
     <br>
     <div class="d-flex justify-space-around flex-wrap">
         <p class="col-lg-6">Le mardi 6 octobre, Armelle Gillard nous a formé à l'outil OpenStreetMap et surtout elle nous a appris les bonnes pratiques pour devenir contributeur à cette banque de données ouverte. On a appris à délimiter une zone à cartographier, à analyser sur le terrain et pour finir à enrichir OpenStreetMap de nos observations.</p>
@@ -53,7 +53,7 @@
   </v-card>
   </v-hover>
   <div class="col-12"></div>
-        <h2 class="col-lg-6 text-left">Qu'est que l'outil collaboratif OpenStreetMap&nbsp;?</h2>
+        <h3 class="col-lg-6 text-left teal--text">Qu'est que l'outil collaboratif OpenStreetMap&nbsp;?</h3>
         <p class="col-lg-6">OpenStreetMap (OSM) est un projet de cartographie qui a pour but de constituer une base de données géographiques libre du monde en utilisant le système GPS et d'autres données libres. Par l'utilisation de moyens informatiques basés sur Internet qui permettent l'intervention et la collaboration de tout utilisateur volontaire, OpenStreetMap relève de la géomatique 2.0 et est aussi une contribution à ce qui est appelé la néogéographie, dont les outils composent le GeoWeb</p>
     </div>
     <br>

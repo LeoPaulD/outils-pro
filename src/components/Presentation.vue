@@ -6,7 +6,7 @@
       
       <v-row dense>
         <v-col class="d-flex flex-column justify-center align-center">
-          <h1 class=" ">Conférences, outils et applications</h1>
+          <h1 class=" primary--text">Conférences, outils et applications</h1>
           
           <div class="d-flex justify-center col-lg-10">
             <p class=" d-flex align-center" >

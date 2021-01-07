@@ -2,10 +2,10 @@
 <div id="Zapier">
   <br>
   <br>
-  <h1 class="text-center">Automatiser facilement des taches avec Zapier.</h1>
+  <h1 class="text-center" style="color: #B71C1C">Automatiser facilement des taches avec Zapier.</h1>
   <br>
   <v-container class="d-flex justify-space-around flex-wrap">
-        <p class="col-lg-6">Le lundi 2 novembre, Bertrand Bussac nous a informé sur les termes liés au developpement web. Puis il nous a formé sur l'outil Zapier pour automatiser très facilement des taches. Il nous a montré comment lier 2 applications afin d'automatiser des taches redondandes dans notre quotidien professionel. </p>
+        <p class="col-lg-6">Le lundi 2 novembre, Bertrand Bussac nous a informé sur les termes liés au developpement web. Puis il nous a formé sur l'outil Zapier pour automatiser très facilement des taches. Il nous a montré comment lier des applications afin d'automatiser des taches redondandes dans notre quotidien professionel. </p>
          <v-hover
         v-slot="{ hover }"
         close-delay="200"
@@ -51,8 +51,13 @@
   </v-card>
   </v-hover>
   <div class="col-12"></div>
-        <h2 class="col-lg-6 text-left">Qu'est que cette outil d'automatisation appelé Zapier&nbsp;?</h2>
+  
+        <h3 class="col-lg-6 "  style="color: #B71C1C">Qu'est que cette outil d'automatisation appelé Zapier&nbsp;?</h3>
         <p class="col-lg-6">Zapier est un service web qui vous permet d’automatiser des actions en connectant les différentes applications que vous utilisez au quotidien. Il existe plus de 1500 applications que vous pouvez utiliser avec Zapier. Parmi les plus courantes se retrouvent : Facebook, Twitter, Gmail, WordPress, Google Drive, Trello, Google Agenda, Linkedin, Slack et bien d’autres encore</p>
+        <div class="col-12"></div>
+        <p class="col-lg-6 " >Pendant cette formation, Bertrand Bussac nous a exposé la problèmatique qu'il rencontré dans son école le Wagon lors des inscriptions et a répondu a cette problématique par l'exemple en nous formant à Zapier. Sa problématique était comment gérer facilement les demandes d'inscriptions à son école. Pour répondre à cette problématique, il a créé un formulaire sur la plateforme TypeForme, pour que les étudiants puissent s'inscrire. Une fois que l'étudiant a rempli le formulaire, une fiche est créé sur le Trello de Bertrand Bussac. Si les documents demandés sont complet après verification, Bertrand Bussac place la fiche dans la colonne complet et ça déclanche l'envoi d'un mail à l'étudiant pour le notifier que son dossier est complet. Mais si le dossier est incomplet, l'étudiant est notifié que son dossier n'est pas complet. </p>
+        <p class="col-lg-6">De mon côté, j'ai utilisé Zapier pour gérer mes invitations à ma webtv. En effet avec mon colocataire, nous avons créé Feu Libre une émission diffusé en direct sur Twitch puis retransmise sur Youtube. A chaque émission nous recevons deux invités. Le message d'invitation à toujours une base commune et quelques variables qui fluctuent. J'ai réfléchi quels sont les éléments fixe de mon message et quels sont les éléments qui changent dans mon message. La présentation de l'emission reste identique ainsi que les formules de politesses. Mais le numéro de l'émission, le théme de l'émission, la date et l'heure de l'émission ainsi que le nom des invités sont des éléments de fluctuasion. Je vous détail donc ma démarche d'automatisation dans la chronologie suivante :   </p>
+         
     </v-container>
   
   <br>
@@ -72,21 +77,17 @@
         dark
       >
         <v-card-title class="title">
-          Lorem Ipsum Dolor
+          {{item.title}}
         </v-card-title>
         <v-card-text class="white text--primary">
-          <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
-          <v-btn
-            :color="item.color"
-            class="mx-0"
-            outlined
-          >
-            Button
-          </v-btn>
+          <br>
+          <p>{{item.content}}</p>
         </v-card-text>
       </v-card>
     </v-timeline-item>
   </v-timeline>
+  <br>
+  <br>
   </div>
 </template>
 <script>
@@ -94,21 +95,30 @@
     data: () => ({
       items: [
         {
-          color: 'red lighten-2',
-          icon: 'mdi-star',
+          color: 'red darken-4',
+          icon: 'mdi-form-textbox',
+          title: "Création d'un formulaire sur Typeform",
+          content: "Je créais un formulaire pour transmettre les informations qui fluctuent dans mes invitations, c'est à dire le numéro de l'émission, le nom/prénom et mail de mes invités, la date et l'heure de l'émission et le thème de l'émission. Une fois mon formulaire rempli des actions se mettent en place."
         },
         {
-          color: 'purple darken-1',
-          icon: 'mdi-book-variant',
+          color: 'red darken-4',
+          icon: 'mdi-email',
+          title: "Envoi  des mails d'invitations avec Gmail",
+          content: "Un mail est envoyé a mes invités grâce aux adresses mails que j'ai rentré dans mon formulaire avec un message générique d'invitation enrichi des données de mon formulaire."
         },
         {
-          color: 'green lighten-1',
-          icon: 'mdi-airballoon',
+          color: 'red darken-4',
+          icon: 'mdi-trello',
+          title: 'Archivage des invitations sur Trello',
+          content: "Une fois l'invitation envoyé par mail, le message de l'invitation est archivé sous forme de carte sur Trello pour retrouver facilement le nom de mes invités des anciennes émissions, du numéro de l'émission, des dates ou encore du thème de l'émission. "
         },
         {
-          color: 'indigo',
-          icon: 'mdi-buffer',
+          color: 'red darken-4',
+          icon: 'mdi-share-variant',
+          title: 'Améliorations possibles',
+          content: "Le jour de l'émission, quelques heures avant le direct, on pourrait imaginer envoyer une newsletter à une liste de mails, faire un tweet pour informers notre comunauté de la difusion de l'émission ce jour, ainsi que leur donner le lien de diffusion."
         },
+        
       ],
     }),
   }

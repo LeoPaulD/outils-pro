@@ -35,7 +35,7 @@
           v-on="on"
        
 
-      >OSM</v-avatar>
+      ><v-img src="images/map.jpg"></v-img></v-avatar>
       
        </div>
       </template>
@@ -59,8 +59,8 @@
         </v-toolbar>
         <div class="d-flex justify-center ">
 
-        
-        <v-responsive :aspect-ratio="16/9"  style="max-width: 350px" >
+        <div class="story">
+          <v-responsive :aspect-ratio="16/9"   >
         <v-img
         src="images/map-story.jpg"
         
@@ -68,6 +68,8 @@
         class="grey lighten-2"
       ></v-img>
       </v-responsive>
+        </div>
+        
           </div>
       </v-card>
     </v-dialog>
@@ -88,7 +90,7 @@
           v-on="on"
        
 
-      >DS</v-avatar>
+      ><v-img src="images/design.jpg"></v-img></v-avatar>
       
        </div>
       </template>
@@ -112,8 +114,8 @@
         </v-toolbar>
         <div class="d-flex justify-center ">
 
-        
-        <v-responsive :aspect-ratio="16/9"  style="max-width: 350px" >
+        <div class="story">
+        <v-responsive :aspect-ratio="16/9"   >
         <v-img
         src="images/design-story.jpg"
         
@@ -121,6 +123,7 @@
         class="grey lighten-2"
       ></v-img>
       </v-responsive>
+        </div>
           </div>
       </v-card>
     </v-dialog>
@@ -141,7 +144,7 @@
           v-on="on"
        
 
-      >Zapier</v-avatar>
+      ><v-img src="images/zapier.jpg"></v-img></v-avatar>
       
        </div>
       </template>
@@ -165,8 +168,8 @@
         </v-toolbar>
         <div class="d-flex justify-center ">
 
-        
-        <v-responsive :aspect-ratio="16/9"  style="max-width: 350px" >
+        <div class="story">
+        <v-responsive :aspect-ratio="16/9"   >
         <v-img
         src="images/Zapier_story.jpg"
         
@@ -174,6 +177,7 @@
         class="grey lighten-2"
       ></v-img>
       </v-responsive>
+        </div>
           </div>
       </v-card>
     </v-dialog>
@@ -200,8 +204,10 @@
         <Presentation />
         <div class="d-flex justify-center">
   <div class="col-md-8 col-sm-10">
-         
-        
+         <br>
+        <br>
+        <v-divider></v-divider>
+        <CultureNumerique />
         <br>
         <br>
         <v-divider></v-divider>
@@ -224,41 +230,142 @@
       
     </v-main>
     <scrollactive v-on:itemchanged="onItemChanged" :offset="0">
+      <div class="mobile">
+        <v-bottom-navigation
+    v-model="value"
+    :background-color="color"
+    dark
+    
+    fixed
+    
+    
+  >
+  
+  
+
+    <v-btn href="#presentation" class="scrollactive-item mobilenone">
+      
+
+      <v-icon>mdi-presentation</v-icon>
+    </v-btn>
+    <v-btn href="#CultureNumerique" class="scrollactive-item">
+      
+
+      <v-icon>mdi-lightbulb-on</v-icon>
+    </v-btn>
+
+    <v-btn href="#OpenStreetMap" class="scrollactive-item">
+      
+
+      <v-icon>mdi-map</v-icon>
+    </v-btn>
+
+    <v-btn href="#DesignSprint" class="scrollactive-item"> 
+      
+
+      <v-icon>mdi-brush</v-icon>
+    </v-btn>
+
+    <v-btn href="#Zapier" class="scrollactive-item">
+      
+
+      <v-icon>mdi-clipboard-list-outline</v-icon>
+    </v-btn>
+    
+  </v-bottom-navigation>
+      </div>
+     
+  <div class="medium">
     <v-bottom-navigation
     v-model="value"
     :background-color="color"
     dark
     shift
     fixed
+    
+    
   >
   
   
 
-    <v-btn href="#presentation" class="scrollactive-item">
-      <span>Présentation </span>
+    <v-btn href="#presentation" class="scrollactive-item mobilenone">
+      <span >Présentation </span>
 
       <v-icon>mdi-presentation</v-icon>
     </v-btn>
+    <v-btn href="#CultureNumerique" class="scrollactive-item">
+      <span >Culture Numerique</span>
+
+      <v-icon>mdi-lightbulb-on</v-icon>
+    </v-btn>
 
     <v-btn href="#OpenStreetMap" class="scrollactive-item">
-      <span>OpenStreetMap </span>
+      <span >OpenStreetMap </span>
 
       <v-icon>mdi-map</v-icon>
     </v-btn>
 
     <v-btn href="#DesignSprint" class="scrollactive-item"> 
-      <span>DesignSprint</span>
+      <span >DesignSprint</span>
 
       <v-icon>mdi-brush</v-icon>
     </v-btn>
 
     <v-btn href="#Zapier" class="scrollactive-item">
-      <span>Zapier</span>
+      <span >Zapier</span>
 
       <v-icon>mdi-clipboard-list-outline</v-icon>
     </v-btn>
     
   </v-bottom-navigation>
+  </div>
+   
+  <div class="large">
+     <v-bottom-navigation
+    v-model="value"
+    :background-color="color"
+    dark
+    horizontal
+    fixed
+    
+    
+    
+  >
+  
+  
+
+    <v-btn href="#presentation" class="scrollactive-item mobilenone">
+      <span >Présentation </span>
+
+      <v-icon>mdi-presentation</v-icon>
+    </v-btn>
+    <v-btn href="#CultureNumerique" class="scrollactive-item">
+      <span >Culture Numerique</span>
+
+      <v-icon>mdi-lightbulb-on</v-icon>
+    </v-btn>
+
+    <v-btn href="#OpenStreetMap" class="scrollactive-item">
+      <span >OpenStreetMap </span>
+
+      <v-icon>mdi-map</v-icon>
+    </v-btn>
+
+    <v-btn href="#DesignSprint" class="scrollactive-item"> 
+      <span >DesignSprint</span>
+
+      <v-icon>mdi-brush</v-icon>
+    </v-btn>
+
+    <v-btn href="#Zapier" class="scrollactive-item">
+      <span >Zapier</span>
+
+      <v-icon>mdi-clipboard-list-outline</v-icon>
+    </v-btn>
+    
+  </v-bottom-navigation> 
+  </div>
+    
   </scrollactive>
     
   
@@ -272,6 +379,7 @@ import OpenStreetMap from './components/OpenStreetMap.vue';
 
 import DesignSprint from './components/DesignSprint.vue';
 import Presentation from './components/Presentation.vue';
+import CultureNumerique from './components/CultureNumerique.vue';
 
 import Cookies from "js-cookie";
 
@@ -283,6 +391,7 @@ export default {
     OpenStreetMap,
     DesignSprint,
     Presentation,
+    CultureNumerique,
   },
   data() {
     return {
@@ -305,9 +414,10 @@ export default {
       color () {
         switch (this.value) {
           case 0: return 'primary'
-          case 1: return 'teal'
-          case 2: return 'brown'
-          case 3: return 'red darken-4'
+          case 1: return 'purple darken-3'
+          case 2: return 'teal'
+          case 3: return 'brown'
+          case 4: return 'red darken-4'
           default: return 'green lighten-1'
         }
       },
@@ -335,14 +445,17 @@ window.addEventListener("appinstalled", () => {
     if (currentItem == 'presentation') {
       this.value = 0;
     }
-    if (currentItem == 'OpenStreetMap') {
+    if (currentItem == 'CultureNumerique') {
       this.value = 1;
     }
-     if (currentItem == 'DesignSprint') {
+    if (currentItem == 'OpenStreetMap') {
       this.value = 2;
     }
-    if (currentItem == 'Zapier') {
+     if (currentItem == 'DesignSprint') {
       this.value = 3;
+    }
+    if (currentItem == 'Zapier') {
+      this.value = 4;
     }
     
   },
