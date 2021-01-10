@@ -102,13 +102,13 @@ Pour répondre à celle-ci, il a créé un formulaire sur la plateforme dite Typ
           color: 'red darken-4',
           icon: 'mdi-form-textbox',
           title: "Création d'un formulaire sur Typeform",
-          content: "Je créais un formulaire pour transmettre les informations qui fluctuent dans mes invitations, c'est à dire le numéro de l'émission, le nom/prénom et mail de mes invités, la date et l'heure de l'émission et le thème de l'émission. Une fois mon formulaire rempli des actions se mettent en place."
+          content: "Je créais un formulaire pour transmettre les informations qui fluctuent dans mes invitations, c'est à dire le numéro de l'émission, le nom/prénom et mail de mes invités, la date et l'heure de l'émission et le thème de l'émission. Une fois mon formulaire rempli, des actions se mettent en place."
         },
         {
           color: 'red darken-4',
           icon: 'mdi-email',
           title: "Envoi  des mails d'invitations avec Gmail",
-          content: "Un mail est envoyé a mes invités grâce aux adresses mails que j'ai rentré dans mon formulaire avec un message générique d'invitation enrichi des données de mon formulaire."
+          content: "Un mail est envoyé à mes invités grâce aux adresses mails que j'ai rentré dans mon formulaire, avec un message générique d'invitation, enrichi des données de mon formulaire."
         },
         {
           color: 'red darken-4',
@@ -120,7 +120,7 @@ Pour répondre à celle-ci, il a créé un formulaire sur la plateforme dite Typ
           color: 'red darken-4',
           icon: 'mdi-share-variant',
           title: 'Améliorations possibles',
-          content: "Le jour de l'émission, quelques heures avant le direct, on pourrait imaginer envoyer une newsletter à une liste de mails, faire un tweet pour informers notre comunauté de la difusion de l'émission ce jour, ainsi que leur donner le lien de diffusion."
+          content: "Le jour de l'émission, quelques heures avant le direct, on pourrait imaginer envoyer une newsletter à une liste de mails, faire un tweet pour informer notre comunautée de la difusion de l'émission ce jour, ainsi que leur donner le lien de diffusion."
         },
         
       ],
