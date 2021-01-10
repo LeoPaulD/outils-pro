@@ -10,7 +10,7 @@
           
           <div class="d-flex justify-center col-md-6">
             <p class=" d-flex align-center" >
-           Au premier semestre des masters Humanités numériques de l’Université Bordeaux-Montaigne, des intervenants nous ont présenté et formé à différents outils et applications. Sur cette plateforme je vais vous présenter ces différents outils succinctement.  </p>
+           Lors du premier semestre des Masters en Humanités Numériques et Digitales de l’Université Bordeaux-Montaigne, des intervenants nous ont présenté et formé à différents outils et applications. Sur cette plateforme, vous y trouverez la présentation succincte de ces différents outils.</p>
           </div>
           
         </v-col>

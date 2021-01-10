@@ -6,7 +6,7 @@
     <h1 class="text-center teal--text" >Premiers pas avec OpenStreetMap.</h1>
     <br>
     <div class="d-flex justify-space-around flex-wrap">
-        <p class="col-lg-6">Le mardi 6 octobre, Armelle Gillard nous a formé à l'outil OpenStreetMap et surtout elle nous a appris les bonnes pratiques pour devenir contributeur à cette banque de données ouverte. On a appris à délimiter une zone à cartographier, à analyser sur le terrain et pour finir à enrichir OpenStreetMap de nos observations.</p>
+        <p class="col-lg-6">Le mardi 6 octobre, Armelle Gillard nous a formé à l’outil OpenStreetMap ainsi qu’aux bonnes pratiques pour devenir contributeur à cette banque de données ouverte. Nous avons appris à délimiter une zone à cartographier, qu’il sera possible d'analyser ensuite sur le terrain. Pour finir, elle nous a montré comment enrichir la base de données d’OSM à l’aide de nos observations.</p>
          <v-hover
         v-slot="{ hover }"
         close-delay="200"
@@ -156,20 +156,20 @@
           color: 'teal',
           icon: 'mdi-file-outline',
           title: "Field Papers et observation terrain",
-          content: "Field Papers est un outil qui nous aide à créer un atlas de plusieurs pages de n'importe où dans le monde (zone d'observation découpé en plusieurs zones ). Une fois imprimé, On peut l'emporter à l'extérieur, sur le terrain, pour y noter nos observations."
+          content: "Field Papers est un outil qui nous aide à créer un atlas de plusieurs pages de n'importe où dans le monde (la zone d'observation y est découpée en plusieurs zones). Une fois celle-ci imprimée, on peut l'emporter à l'extérieur ainsi que sur le terrain, afin d’y noter nos observations."
         },
         
         {
           color: 'teal',
           icon: 'mdi-map',
           title: "Contribution OpenStreetMap",
-          content: "Les observations sur le terrain nous permettent de constater des différences avec les données présentent dans OpenStreetMap, la plateforme étant ouverte on peut contribuer librement et l'enrichir de nos observations. Je rentre donc mes données observés sur le terrain qui seront validés par des contributeurs réguliers."
+          content: "Les observations sur le terrain nous permettent de constater des différences avec les données présentes dans OpenStreetMap, la plateforme étant ouverte, on peut y contribuer librement en l’enrichissant de nos observations. Les données observées sur le terrain seront rentrées sur le serveur qui sera ensuite validé par des contributeurs réguliers."
         },
         {
           color: 'teal',
           icon: 'mdi-map',
           title: 'Création de cartes tématiques avec uMap',
-          content: "uMap permet de créer des cartes personnalisées sur des fonds OpenStreetMap en un instant et les afficher dans votre site. On peut par exemple choisi de délimiter une ville ( Par exemple : Bordeaux et d'afficher toutes les pompes à essence présentent dans cette ville)."
+          content: "uMap permet de créer des cartes personnalisées sur des fonds OpenStreetMap, cela en un instant pour les afficher ensuite sur votre site. Par exemple, on peut choisir d’y délimiter une ville (tel que Bordeaux et d’y afficher toutes les pompes à essences présentes dans la ville)."
         },
         
         

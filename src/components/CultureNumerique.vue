@@ -5,7 +5,7 @@
         <h1 class="text-center" style="color: #6A1B9A">Culture numérique et évolution d'internet.</h1>
   <br>
   <v-container class="d-flex justify-space-around flex-wrap">
-        <p class="col-lg-6">Le lundi 28 septembre et mardi 29,  Soufiane Rouissi nous a fait deux conférences sur la culture numérique, les évolutions d'internet et l'apprentissage en ligne. Ces cours sont essentiel pour notre culture personnelle et pour comprendre les enjeux et l'évolution du numérique. On comprend ainsi mieux l'interet de maitriser les différents outils sur lesquels nous sommes formé durant cette formation.</p>
+        <p class="col-lg-6">Le lundi 28 et mardi 29 septembre, Soufiane Rouissi nous a présenté deux conférences sur la culture numérique. Celles-ci concernaient les évolutions d’internet et l’apprentissage en ligne. Ces cours sont essentiels pour différentes raisons, aussi bien pour notre culture personnelle que pour comprendre les enjeux et l’évolution du numérique. De ce fait, cela permet de mieux comprendre l'intérêt de maîtriser les différents outils sur lesquels nous sommes formés lors de cette formation. </p>
          <v-hover
         v-slot="{ hover }"
         close-delay="200"
@@ -91,25 +91,25 @@ export default {
           color: '#6A1B9A',
           icon: 'mdi-web',
           title: "WEB 1.0 | Web statique",
-          content: "Le web statique est centrés sur la distribution d’informations. Il se caractérise par des sites orientés produits, qui sollicent peu l’intervention des utilisateurs."
+          content: "Le web statique à pour but la distribution d’informations et de contenus. Il sollicite peu l'intervention des utilisateurs."
         },
         {
           color: '#6A1B9A',
           icon: 'mdi-account-multiple',
           title: "WEB 2.0 | Web social",
-          content: "Le web social privilégie la dimension de partage et d’échange d’informations et de contenus (textes, vidéos, images ou autres). Il voit l’émergence des réseaux sociaux, des smartphones et des blogs. Le web se démocratise et se dynamise"
+          content: "Le web social privilégie la dimension de partage et d’échange d’informations et de contenus (textes, vidéos, images ou autres). Il voit l’émergence des réseaux sociaux, des smartphones et des blogs. On remarque donc une face du web qui se démocratise et se dynamise. "
         },
         {
           color: '#6A1B9A',
           icon: 'mdi-database',
           title: 'WEB 3.0 | Web sémantique',
-          content: "Le web sémantique vise à organiser la masse d’informations disponibles en fonction du contexte et des besoins de chaque utilisateur, en tenant compte de sa localisation, de ses préférences, etc. C’est un web qui tente de donner sens aux données. Cest aussi un web plus portable et qui fait de plus en plus le lien entre monde réel et monde virtuel. Il répond aux besoins d’utilisateurs mobiles, toujours connectés à travers une multitude de supports et d’applications malines ou ludiques."
+          content: "Le web sémantique vise à organiser la masse d’informations disponibles en fonction du contexte et des besoins de chaque utilisateur, et ce, en tenant compte de sa localisation, de ses préférences, etc. C’est un web qui tente de donner un sens aux données. Il s’agit aussi d'un web plus portable et qui fait de plus en plus le lien entre le monde réel et le monde virtuel. Il répond aux besoins d’utilisateurs mobiles, toujours connectés à travers une multitude de supports et d’applications malines ou ludiques."
         },
         {
           color: '#6A1B9A',
           icon: 'mdi-server-security',
           title: 'WEB 4.0 | Web intelligent',
-          content: "Le web intelligent vise à immerger l’individu dans un environnement (web) de plus en plus prégnant. Il pousse à son paroxisme la voie de la personnalisation ouverte par le web 3.0 mais il pose par la même occasion de nombreuses questions quant à la protection de la vie privée, au contrôle des données"
+          content: "Le web intelligent vise à immerger l’individu dans un environnement (web) de plus en plus prégnant. Il pousse à son paroxysme la voie de la personnalisation ouverte par le biais du web 3.0 mais il pose par la même occasion de nombreuses questions quant à la protection de la vie privée, au contrôle des données, etc. "
         },
         
       ],

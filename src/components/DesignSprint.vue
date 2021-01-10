@@ -7,7 +7,8 @@
   <h1 class="text-center brown--text">Innover en utilisant le Design Sprint.</h1>
   <br>
   <v-container class="d-flex justify-space-around flex-wrap">
-        <p class="col-lg-6">Le mercredi 14 octobre, Camille DE AMORIN BONNEAU nous a appris les grands principes de la méthode de création Design Sprint sous forme d'ateliers pratiques. Nous avons réalisé les 5 étapes du Design Sprint en version accéléré car nous l'avons realisé en une journée au lieu de 5.</p>
+        <p class="col-lg-6">Le mercredi 14 octobre, Camille De Amorin Bonneau nous a appris les grands principes de la méthode de création Design Sprint sous formes d’ateliers pratiques. Nous avons réalisé les cinq étapes du Design Sprint en version accélérée puisque nous avons disposé d’une seule journée, or cinq auraient été nécessaires afin de pouvoir approfondir davantage. 
+</p>
          <v-hover
         v-slot="{ hover }"
         close-delay="200"
@@ -54,7 +55,7 @@
   </v-hover>
   <div class="col-12"></div>
         <h3 class="col-lg-6 text-left brown--text">Qu'est que ce processus de création appelé Design Sprint&nbsp;?</h3>
-        <p class="col-lg-6">Le Design Sprint est un processus de création conçue pour les start-ups et les grandes entreprises. L’idée novatrice du Design Sprint est d’imposer une contrainte temporelle, 5 jours. Il permet d'obtenir un premier prototype d’un produit et les retours d’expérience des utilisateurs. Pour y parvenir, cette méthode mélange différentes techniques d’idéation, de stratégie business, et de conception centrée sur l’utilisateur.</p>
+        <p class="col-lg-6">Le Design Sprint est un processus de création conçu pour les start-ups et les grandes entreprises. L’idée novatrice du Design Sprint est d’imposer une contrainte temporelle de cinq jours. Il permet d'obtenir un premier prototype d’un produit et les retours d’expériences des utilisateurs. Pour y parvenir, cette méthode mélange différentes techniques d’idéations, de stratégies business, et de conceptions centrées sur l’utilisateur.</p>
     </v-container>
   <br>
   <v-stepper v-intersect="onIntersect" v-model="e1"  color="purple">
