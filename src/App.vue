@@ -19,6 +19,61 @@
 
      <v-app-bar class="d-flex justify-center align-center" style="height: 70px;" id="presentation">
         <v-dialog
+      v-model="dialog1"
+      fullscreen
+      hide-overlay
+      transition="dialog-bottom-transition"
+    >
+      <template v-slot:activator="{ on, attrs }">
+        
+        <div style="border: 2px dashed #66BB6A; padding: 2.5px; border-radius: 50%;" class="ma-1"  :elevation="hover ? 16 : 2"
+          >
+         <v-avatar
+        color="#6A1B9A"
+        size="53"
+        v-bind="attrs"
+          v-on="on"
+       
+
+      ><v-img src="images/numerique.jpg"></v-img></v-avatar>
+      
+       </div>
+      </template>
+      <v-card>
+        <v-toolbar
+          dark
+          color="#6A1B9A"
+        >
+          <v-btn
+            icon
+            dark
+            @click="dialog1 = false"
+          >
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+          <v-toolbar-title>Culture Numérique</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-toolbar-items>
+            
+          </v-toolbar-items>
+        </v-toolbar>
+        <div class="d-flex justify-center ">
+
+        <div class="story">
+          <v-responsive :aspect-ratio="16/9"   >
+        <v-img
+        src="images/numerique_story.jpg"
+        
+        alt="test"
+        class="grey lighten-2"
+      ></v-img>
+      </v-responsive>
+        </div>
+        
+          </div>
+      </v-card>
+    </v-dialog>
+    <v-dialog
       v-model="dialog"
       fullscreen
       hide-overlay
@@ -202,8 +257,8 @@
      
       <v-container>
         <Presentation />
-        <div class="d-flex justify-center">
-  <div class="col-md-8 col-sm-10">
+        
+  
          <br>
         <br>
         <v-divider></v-divider>
@@ -223,8 +278,8 @@
          <v-divider></v-divider>
          
         <Zapier />
-        </div>
-  </div>
+        
+  
 
       </v-container>
       
@@ -400,8 +455,9 @@ export default {
       isPresentation: false,
       value: 0,
       deferredPrompt: null,
-      
+      dialog1: false,
       dialog: false,
+
       dialog2: false,
       dialog3: false,
       
