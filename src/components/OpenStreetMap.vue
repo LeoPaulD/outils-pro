@@ -85,11 +85,11 @@
   </v-timeline>
   <br>
    <br>
-   <h3 class="text-center teal--text">Carte réalisé sur uMap pour montrer la zone qu'on a observé lors de notre formation à OpenStreetMap</h3>
+   <h3 class="text-center teal--text mobilenone">Carte réalisé sur uMap pour montrer la zone qu'on a observé lors de notre formation à OpenStreetMap</h3>
     <iframe class="mobilenone" width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/enrichir-open-street-map_530122?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
     <br>
     <br>
-  <h3 class="text-center teal--text">Délimitation de la zone d'observation sur FieldMapers</h3>
+  <h3 class="text-center teal--text mobilenone">Délimitation de la zone d'observation sur FieldMapers</h3>
     <div class="d-flex justify-center ">
        
     <v-carousel  class="mobilenone">
